@@ -6,7 +6,7 @@ require 'Router.php';
 
 $path = parse_url( trim( $_SERVER['REQUEST_URI'], '/' ), PHP_URL_PATH);
 
-echo $path;
+//echo $path;
 
 $router = new Router;
 $router->get('', 'views/default.php');
